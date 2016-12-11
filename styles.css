@@ -1,0 +1,45 @@
+.door .panel-body {
+  background-repeat: no-repeat !important;
+  background-size:auto 100% !important;
+  background-position: center; 
+}
+.door[date="16"] .panel-body { background-image: url(./img/door16.jpg); }
+.door[date="17"] .panel-body { background-image: url(./img/door17.jpg); }
+.door[date="18"] .panel-body { background-image: url(./img/door18.jpg); }
+.door[date="19"] .panel-body { background-image: url(./img/door19.jpg); }
+.door[date="20"] .panel-body { background-image: url(./img/door20.jpg); }
+.door[date="21"] .panel-body { background-image: url(./img/door21.jpg); }
+.door[date="22"] .panel-body { background-image: url(./img/door22.jpg); }
+.door[date="23"] .panel-body { background-image: url(./img/door23.jpg); }
+.door[date="24"] .panel-body { background-image: url(./img/door24.jpg); }
+
+.door .panel-body {
+  height: 400px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.door.disabled .panel-body {
+  cursor: default;
+  opacity: .25;
+}
+
+.door nr {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px; 
+  background: white;
+}
+.door nr > span {
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
