@@ -13,9 +13,9 @@ $(() => $('.door')
 
 doorHandlers = {
   // Racklett
-  '16': () => console.log('16'),
+  '16': () => $('#modal16').modal('show'),
   // markt
-  '17': () => console.log('17'),
+  '17': () => $('#modal17').modal('show'),
   // Star Wars
   '18': () => window.location.href = 'https://www.youtube.com/watch?v=yHfLyMAHrQE&t=214',
   // Kinder
