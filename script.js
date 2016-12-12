@@ -19,13 +19,13 @@ doorHandlers = {
   // Star Wars
   '18': () => window.location.href = 'https://www.youtube.com/watch?v=yHfLyMAHrQE&t=214',
   // Kinder
-  '19': () => console.log('19'),
+  '19': () => $('#modal19').modal('show'),
   // Lindor
   '20': () => console.log('20'),
   // Schnaps
   '21': () => console.log('21'),
   // Skyrim
-  '22': () => console.log('22'),
+  '22': () => $('#modal22').modal('show'),
   // Ody-c
   '23': () => console.log('23'),
   // Irie
