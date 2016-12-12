@@ -3,7 +3,8 @@ $(() => $('.door')
     .each((index, elem) => {
       elem = $(elem)
       let day = elem.attr('date')
-      let unlockDate = new Date(2016, 12, day, 0, 0, 0, 0)
+      let unlockDate = new Date(2016, 11, day, 0, 0, 0, 0)
+      console.log(unlockDate)
       if (unlockDate <= Date.now()) {
         elem.click(doorHandlers[day]);
       } else {
