@@ -4,7 +4,6 @@ $(() => $('.door')
       elem = $(elem)
       let day = elem.attr('date')
       let unlockDate = new Date(2016, 11, day, 0, 0, 0, 0)
-      console.log(unlockDate)
       if (unlockDate <= Date.now()) {
         elem.click(doorHandlers[day]);
       } else {
@@ -20,7 +19,7 @@ doorHandlers = {
   // Star Wars
   '18': () => window.location.href = 'https://www.youtube.com/watch?v=yHfLyMAHrQE&t=214',
   // Kinder
-  '19': () => $('#modal19').modal('show'),
+  '19': () => console.log('19'),
   // Lindor
   '20': () => console.log('20'),
   // Schnaps
@@ -28,7 +27,10 @@ doorHandlers = {
   // Skyrim
   '22': () => $('#modal22').modal('show'),
   // Ody-c
-  '23': () => console.log('23'),
+  '23': () => $('#modal23').modal('show'),
   // Irie
-  '24': () => console.log('24')
+  '24': () => window.location.href = 'https://www.youtube.com/watch?v=9iKTOKidwEE'
 }
+
+$(() => $('*[showSpoiler]')
+  .click((evt) => $(`spoiler#${$(evt.target).attr('showSpoiler')}`).toggleClass('show')))
