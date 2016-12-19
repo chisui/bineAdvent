@@ -20,9 +20,9 @@ doorHandlers = {
   '18': () => window.location.href = 'https://www.youtube.com/watch?v=yHfLyMAHrQE&t=214',
   // Kinder
   '19': () => console.log('19'),
-  // Lindor
-  '20': () => console.log('20'),
   // Schnaps
+  '20': () => $('#modal20').modal('show'),
+  // Lindor
   '21': () => console.log('21'),
   // Skyrim
   '22': () => $('#modal22').modal('show'),
