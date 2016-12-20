@@ -23,7 +23,7 @@ doorHandlers = {
   // Schnaps
   '20': () => $('#modal20').modal('show'),
   // Lindor
-  '21': () => console.log('21'),
+  '21': () => $('#modal21').modal('show'),
   // Skyrim
   '22': () => $('#modal22').modal('show'),
   // Ody-c
